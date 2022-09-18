@@ -1,0 +1,198 @@
+{
+  "companies": [
+    {
+      "title": "Компания 1",
+      "stars": 5,
+      "geo": "Архангельск, Архангельская область",
+      "km": 1400,
+      "completed": 13,
+      "markup": 1.20
+    },
+    {
+      "title": "Компания 2",
+      "stars": 4,
+      "geo": "Красноярск, Красноярский край",
+      "km": 1700,
+      "completed": 27,
+      "markup": 1.4
+    },
+    {
+      "title": "Компания 3",
+      "stars": 3,
+      "geo": "Сыктывкар, Республика Коми",
+      "km": 1200,
+      "completed": 4,
+      "markup": 1.5
+    },
+    {
+      "title": "Компания 4",
+      "stars": 2,
+      "geo": "Магадан, Магаданская область",
+      "km": 3700,
+      "completed": 2,
+      "markup": 1.1
+    },
+    {
+      "title": "Компания 5",
+      "stars": 5,
+      "geo": "Краснодар, Краснодарский край",
+      "km": 3100,
+      "completed": 68,
+      "markup": 1.35
+    },
+    {
+      "title": "Компания 6",
+      "stars": 4,
+      "geo": "Великий Новгород, Новгородская область",
+      "km": 2200,
+      "completed": 54,
+      "markup": 1.25
+    },
+    {
+      "title": "Компания 7",
+      "stars": 3,
+      "geo": "Владивосток, Приморский край",
+      "km": 4300,
+      "completed": 16,
+      "markup": 1.3
+    },
+    {
+      "title": "Компания 8",
+      "stars": 4,
+      "geo": "Воркута, Республика Коми",
+      "km": 363,
+      "completed": 33,
+      "markup": 1.6
+    }
+  ],
+  "sensors": [
+    {
+      "title": "Датчик оборотов лебедки",
+      "unit": "м",
+      "priority": 1,
+      "min_critical": -800,
+      "max_critical": 800,
+      "price": 40000
+    },
+    {
+      "title": "Датчик веса на крюке",
+      "unit": "тс",
+      "priority": 2,
+      "min_critical": 0,
+      "max_critical": 600,
+      "price": 70000
+    },
+    {
+      "title": "Датчик давления на манифольде",
+      "unit": "Мпа",
+      "priority": 3,
+      "min_critical": 0,
+      "max_critical": 100,
+      "price": 30000
+    },
+    {
+      "title": "Датчик давления в затрубном пространстве",
+      "unit": "Мпа",
+      "priority": 4,
+      "min_critical": 0,
+      "max_critical": 40,
+      "price": 50000
+    },
+    {
+      "title": "Датчик ходов насосов",
+      "unit": "ход/мин",
+      "priority": 1,
+      "min_critical": 30,
+      "max_critical": 650,
+      "price": 20000
+    },
+    {
+      "title": "Датчик расхода бурового раствора на входе",
+      "unit": "м3/с",
+      "priority": 2,
+      "min_critical": 0.08,
+      "max_critical": 12.2,
+      "price": 15000
+    },
+    {
+      "title": "Индикатор потока бурового раствора на выходе",
+      "unit": "м3/с",
+      "priority": 2,
+      "min_critical": 0,
+      "max_critical": 100,
+      "price": 45000
+    },
+    {
+      "title": "Датчики уровня бурового раствора во всех емкостях",
+      "unit": "м3",
+      "priority": 3,
+      "min_critical": 0.2,
+      "max_critical": 5.7,
+      "price": 60000
+    },
+    {
+      "title": "Датчик плотности бурового раствора на входе в скважину",
+      "unit": "г/см3",
+      "priority": 1,
+      "min_critical": 600,
+      "max_critical": 2400,
+      "price": 55000
+    },
+    {
+      "title": "Датчик плотности бурового раствора на выходе в скважину",
+      "unit": "г/см3",
+      "priority": 1,
+      "min_critical": 600,
+      "max_critical": 2400,
+      "price": 55000
+    },
+    {
+      "title": "Датчик удельной электрической проводимости бурового раствора на входе",
+      "unit": "См/м",
+      "priority": 2,
+      "min_critical": 3,
+      "max_critical": 300,
+      "price": 35000
+    },
+    {
+      "title": "Датчик удельной электрической проводимости бурового раствора на выходе",
+      "unit": "См/м",
+      "priority": 2,
+      "min_critical": 3,
+      "max_critical": 300,
+      "price": 35000
+    },
+    {
+      "title": "Датчик температуры бурового раствора на входе в скважину",
+      "unit": "°С",
+      "priority": 3,
+      "min_critical": 0,
+      "max_critical": 100,
+      "price": 20000
+    },
+    {
+      "title": "Датчик температуры бурового раствора на выходе из скважины",
+      "unit": "°С",
+      "priority": 3,
+      "min_critical": 0,
+      "max_critical": 100,
+      "price": 20000
+    },
+    {
+      "title": "Датчик оборотов ротора (ВСП)",
+      "unit": "об/мин",
+      "priority": 1,
+      "min_critical": 0,
+      "max_critical": 350,
+      "price": 10000
+    },
+    {
+      "title": "Датчик момента на роторе",
+      "unit": "кНм",
+      "priority": 1,
+      "min_critical": 0.6,
+      "max_critical": 30,
+      "price": 5000
+    }
+  ]
+}
