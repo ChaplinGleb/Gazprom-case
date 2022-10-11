@@ -121,21 +121,28 @@ async def conflicts(db: Session = Depends(get_db)):
     ret = {'data': []}
     for conflict in db.query(Conflict).all():
         sensor = db.query(Sensor).filter_by(id=conflict.sensor_id).first()
-        parameters = [Company.completed.desc(), Company.km.asc(), Company.stars.desc(),
-                      Company.markup.asc()]
+        if sensor.priority == 1:
+            priority = Company.completed.desc()
+        elif sensor.priority == 2:
+            priority = Company.km.asc()
+        elif sensor.priority == 3:
+            priority = Company.stars.desc()
+        elif sensor.priority == 4:
+            priority = Company.markup.asc()
+        else:
+            priority = Company.completed.desc()
         companies_list = []
-        for parameter in parameters:
-            companies = db.query(Company).order_by(parameter).limit(2).all()
-            for company in companies:
-                companies_list.append({
-                    'id': company.id,
-                    'title': company.title,
-                    'stars': company.stars,
-                    'geo': company.geo,
-                    'km': company.km,
-                    'completed': company.completed,
-                    'price': sensor.price * company.markup
-                })
+        companies = db.query(Company).order_by(priority).limit(8).all()
+        for company in companies:
+            companies_list.append({
+                'id': company.id,
+                'title': company.title,
+                'stars': company.stars,
+                'geo': company.geo,
+                'km': company.km,
+                'completed': company.completed,
+                'price': sensor.price * company.markup
+            })
 
         data = {
             'id': conflict.id,
